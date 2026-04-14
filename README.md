@@ -1,6 +1,4 @@
-Mình đã gộp lại toàn bộ từ đầu đến cuối thành một bản hoàn chỉnh để bạn dễ dàng copy và dán thẳng vào file `README.md` nhé:
 
-```markdown
 # 🌊 Ngập Biết Trước (Innogreen) - Dự án Cộng đồng
 
 Đây là ứng dụng **phi lợi nhuận** sử dụng Trí tuệ nhân tạo (AI) và dữ liệu cộng đồng thời gian thực để cảnh báo ngập lụt tại khu vực TP.HCM. Dự án giúp người đi xe máy chủ động chọn lộ trình an toàn, tránh thủy kích và giảm thiểu thiệt hại kinh tế cho người dân.
