@@ -1,0 +1,20 @@
+# --- Cấu hình chung ---
+.DS_Store
+Thumbs.db
+.env
+
+# --- Backend (Node.js) ---
+backend-server/node_modules/
+backend-server/dist/
+
+# --- Mobile App (React Native / Expo) ---
+mobile-app/node_modules/
+mobile-app/.expo/
+mobile-app/dist/
+mobile-app/web-build/
+
+# --- AI & Python ---
+ai-model/venv/
+ai-model/__pycache__/
+ai-model/*.py[cod]
+ai-model/*.pkl
