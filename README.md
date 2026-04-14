@@ -6,8 +6,8 @@
 ---
 
 ## 👥 Đội ngũ thực hiện (GreenFlow Team)
-* **Trần Văn Hậu** (PM) - Phát triển Full-stack & AI.
-* **Tô Hoàng Thành** - Đồng sáng lập & Phát triển dự án.
+* **Tô Hoàng Thành** (PM) - Phát triển Full-stack & AI.
+* **Trần Văn Hậu** - Đồng sáng lập & Phát triển dự án.
 * **Cao Thành Đông** - Thành viên nòng cốt.
 * **Đơn vị:** Khoa Công nghệ Thông tin - Trường Đại học Công nghiệp TP. Hồ Chí Minh (IUH).
 
