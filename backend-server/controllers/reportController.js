@@ -3,8 +3,8 @@ const Report = require('../models/Report');
 // 1. Người dùng gửi báo cáo điểm ngập mới (Đã hỗ trợ kèm Ảnh)
 exports.createReport = async (req, res) => {
     try {
-        // 1. Lấy dữ liệu từ body (Dùng toàn bộ dấu gạch dưới cho chuẩn)
-        const { ten_duong, muc_ngap_uoc_tinh, mo_ta } = req.body;
+        // 1. Nhận thêm latitude và longitude từ Mobile gửi lên
+        const { ten_duong, muc_ngap_uoc_tinh, mo_ta, latitude, longitude } = req.body;
         const userId = req.user.id;
 
         let hinh_anh_url = "";
@@ -15,10 +15,12 @@ exports.createReport = async (req, res) => {
         const newReport = new Report({
             user_id: userId,
             ten_duong,
-            // 2. SỬA TẠI ĐÂY: Tên biến phải khớp y hệt dòng const ở trên
-            muc_ngap_uoc_tinh: Number(muc_ngap_uoc_tinh), 
+            muc_ngap_uoc_tinh: Number(muc_ngap_uoc_tinh),
             mo_ta,
-            hinh_anh_url 
+            hinh_anh_url,
+            // 2. LƯU VÀO DATABASE
+            latitude: Number(latitude),
+            longitude: Number(longitude)
         });
 
         await newReport.save();
@@ -28,7 +30,6 @@ exports.createReport = async (req, res) => {
         res.status(500).json({ error: error.message });
     }
 };
-
 // 2. Mobile App lấy danh sách báo cáo để ghim lên Bản đồ
 exports.getAllReports = async (req, res) => {
     try {

@@ -60,7 +60,7 @@ export default function LoginScreen({ navigation }: { navigation: any }) {
 
 const styles = StyleSheet.create({
   container: { flex: 1, justifyContent: 'center', padding: 20, backgroundColor: '#F5F5FA' },
-  title: { fontSize: 32, fontWeight: 'bold', color: '#0068FF', textAlign: 'center', marginBottom: 40 },
+  title: { fontSize: 32, fontWeight: 'bold', color: 'green', textAlign: 'center', marginBottom: 40 },
   input: { backgroundColor: '#FFF', padding: 15, borderRadius: 12, marginBottom: 15, borderWidth: 1, borderColor: '#EBEBF0' },
   button: { backgroundColor: '#0068FF', padding: 15, borderRadius: 12, alignItems: 'center', marginTop: 10 },
   buttonText: { color: '#FFF', fontSize: 16, fontWeight: 'bold' },
